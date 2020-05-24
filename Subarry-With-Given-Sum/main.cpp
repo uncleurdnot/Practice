@@ -31,10 +31,8 @@ pair<int, int> checkvec(vector<int> vec, int S){
   int idx = 0;
   pair<int, int> ret;
   ret.first = -1;
-  //cout << S << ":\t";
   for(int i = 0; i < vec.size(); i++){
     sum += vec.at(i);
-    //cout << i << ":" << sum << "\t";
     if(sum > S)
     {
       sum = 0;
@@ -49,6 +47,5 @@ pair<int, int> checkvec(vector<int> vec, int S){
     }
     
   }
-  //cout << endl;
   return ret;
 }
