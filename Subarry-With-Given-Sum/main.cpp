@@ -1,6 +1,4 @@
 #include <iostream>
-#include <algorithm>
-#include <fstream>
 #include <vector>
 using namespace std;
 pair<int, int> checkvec(vector<int> vec, int S);
