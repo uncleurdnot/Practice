@@ -1,0 +1,14 @@
+CLEAR					//Clear all reg ./
+OUT ` Enter number of values:\t `	//Outputs the nessecary instruction ./
+INPUT					//User Input for number of loops ./
+STO R1					//Store User input ./
+LOOP R1					//Begin Loop R1 times ./
+OUT ` Enter value to sum:\t `
+INPUT					//User Input ./
+ADD R2					//Compute the sum ./
+STO R2					//Store the Sum ./
+LOOP_					//End Loop ./
+LOAD R2
+STO R1
+OUT R1					//Outputs the sum ./
+HALT					//Got'eem ./

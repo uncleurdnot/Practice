@@ -1,0 +1,15 @@
+CLEAR
+ARRY 	deeznutzHAGOTEEM
+OUT	` Input the size of your Array:\t `
+INPUT
+STO 	R1
+LOOP 	R1
+OUT	` Input Value:\t `
+INPUT
+STO 	R2
+ADDARRY	R2 deeznutzHAGOTEEM
+LOOP_
+OUT	` Enter a value to search for in the array:\t `
+INPUT
+LOOK	deeznutzHAGOTEEM
+HALT
