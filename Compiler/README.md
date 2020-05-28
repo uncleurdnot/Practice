@@ -1,5 +1,13 @@
 This program is a simple compiler.
 
+The Assembler reads in Assembly code as defined below, and generates Binary code that can be read by the Simulator.
+
+Comments can be made with the following format:
+
+// `Comment text` ./
+
+Please note that a space must be included between the text and the `./` symbol.
+
 | Code Number # | Binary Code | Rule                     | Explanatiom |
 |---------------|-------------|-------------------------------------------|-----------------------------------|
 | 1             | 0000        |  STO `X`                         | Stores AC in register `X`           |
@@ -16,9 +24,3 @@ This program is a simple compiler.
 | 12            | 1011        |  ARY `X`                         | Creates an array (Vector) with the arbitrary name `X`           |
 | 13            | 1110        |  LOOK `X` (`REG`)                        | Looks in Array X for the value in a register.<br>No input - Searches for the AC<br>Returns index on success, -1 on failure|
 | 14            | 1101        | ADDARY REG `X` EndFragment | Adds the value stored in a register to the Array X            |
-
-Comments can be made with the following format:
-
-// `Comment text` ./
-
-Please note that a space must be included between the text and the `./` symbol.
